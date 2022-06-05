@@ -6,10 +6,12 @@
 #include "ppm.h"
 
 int main(int argc, char* argv[]) {
-	setlocale(LC_ALL, "en_EN");
+	setlocale(LC_ALL, "en_GB");
+
+	// path: .\res\du1.ppm
+	struct ppm* img = ppm_read(argv[1]);
 
 	bitset_t p;
-	struct ppm* img = ppm_read(argv[1]);
 
 	printf("%s\n", argv[1]);
 
